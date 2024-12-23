@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+
+<body>
+    <!-- ! navbar start -->
+    <div class="navbar">
+        <div class="navbar-wrapped">
+            <div class="logo-wrapped">
+                <img class="logo" alt="logoimg" src="./img/pngtree-logo-design-coffee-movie-template-image_226956.jpg">
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Ana səhifə</li>
+                    <li class="menu-list-item">Film</li>
+                    <li class="menu-list-item">Animasyon</li>
+                    <li class="menu-list-item">Populyar</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="./img/National_Black_Cat_Day.webp" alt="profileimg">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profilim</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="toggle">
+                    <i class="bi bi-moon-fill ] text-sm  toggle-icon"></i>
+                    <i class="bi bi-brightness-high-fill text-sm  toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ! navbar end -->
+
+     <!-- ! sidebar start -->
+    <div class="sidebar">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-house-door-fill"></i>
+        <i class="bi bi-people-fill"></i>
+        <i class="bi bi-bookmarks-fill"></i>
+        <i class="bi bi-hourglass-top"></i>
+        <i class="bi bi-cart-fill"></i>
+        <i class="bi bi-gear-fill"></i>
+    </div>
+    <!-- ! sidebar end -->
+     
+    <!-- ! content star -->
+     <div class="container">
+    <!-- ? featured content start -->
+     <div class="content-wrapped">
+      <div class="featured-content">
+        <img class="featured-title" alt="text" src="./img/pngwing.com.png">
+        <p class="featured-desc">Sihirli dünyanın kapılarını aralayan, dostluk, cesaret ve sevgiyle dolu bir macera! Genç bir çocuk olan Harry Potter, sihirli güçlerini keşfeder ve Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilir. Ancak bu, sadece bir eğitim değil – Harry, geçmişiyle yüzleşir ve karanlık büyücü Voldemort’a karşı büyük bir mücadeleye girişir. Arkadaşları Hermione Granger ve Ron Weasley ile birlikte sihirli dünyada tehlikeli sırlar, zorlu seçimler ve harikalarla dolu bir yolculuğa çıkar.</p>
+        <div class="featured-buttons">
+            <button class="play-button">
+                <i class="bi bi-play-circle"></i>
+                Başlat
+            </button>
+            <button class="info-button">
+                <i class="bi bi-info-circle"></i>
+                Fragman
+            </button>
+        </div>
+      </div>
+    </div>
+      <!-- filter start -->
+      <div class="movie-list-filter">
+      <select>
+        <option>Korku</option>
+        <option>Bilim kurgu</option>
+        <option>Aksiyon</option>
+        <option>Anime</option>
+        <option>Komedi</option>
+      </select>
+      </div>
+      <!-- filter end -->
+
+      <!-- movie list start -->
+       <!-- !populyar -->
+       <div class="movie-list-container">
+        <h1 class="movie-list-title">Popüler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <!-- harrypotter -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/harry-potter-list.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">HARRY POTTER</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- strangerthings -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/stranger-things-list.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">STRANGER THINGS</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- coraline -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/coralinee-list.jpeg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">CORALINE</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- night has come -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/night-has-come.png" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">NIGHT HAS COME</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+            <i class="bi bi-chevron-right right"></i>
+        </div>
+       </div>
+       <!-- ! gundemdekiler -->
+       <div class="movie-list-container">
+        <h1 class="movie-list-title">Gündemdekiler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <!-- kungfu panda -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/kungfupanda.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">KUNG FU PANDA 4</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- alien -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/alien.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">ALIEN romulus</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- Deadpool & Wolverine -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/deadpool.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Deadpool & Wolverine</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- Joker: İkili Delilik  -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/joker.jpg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">Joker: İkili Delilik </span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+            <i class="bi bi-chevron-right right"></i>
+        </div>
+       </div>
+       <!-- !Vizyondaki Filmler -->
+       <div class="movie-list-container">
+        <h1 class="movie-list-title">Vizyondaki Filmler</h1>
+        <div class="movie-list-wrapper">
+            <ul class="movie-list">
+                <!-- moana-->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/moana.jpeg" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">MOANA</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- dark -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/dark.jfif" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">DARK</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- tarot -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/tarot.jfif" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">TAROT</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+                <!-- terrifier -->
+                <li class="movie-item">
+                    <img class="movie-item-img" src="./img/terrifier.jfif" alt="harrypotter">
+                    <div class="movie-item-info">
+                        <span class="movie-item-title">TERRIFIER 3</span>
+                      <div class="movie-item-buttons">
+                        <i class="bi bi-play-circle-fill"></i>
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        <i class="bi bi-hand-thumbs-down-fill"></i>
+                        <i class="bi bi-plus-circle-fill"></i>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+            <i class="bi bi-chevron-right right"></i>
+        </div>
+       </div>
+       <!-- movie list end -->
+     <!-- ? featured content end -->
+    </div>
+      <!-- ! content end -->
+</body>
+  <script src="./script.js"></script>
+</html>
